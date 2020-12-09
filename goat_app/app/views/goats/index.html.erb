@@ -1,0 +1,11 @@
+<h1>This is our goats page</h1>
+
+<% @goats.each do |g| %>
+
+    <div><%=link_to g.name, goat_path(g) %><div>
+
+<%end%>
+
+<br/> 
+
+<%= link_to "New Goat Form", new_goat_path%>

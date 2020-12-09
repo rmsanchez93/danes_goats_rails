@@ -1,0 +1,16 @@
+<h1>This should be my new page for goats/new</h1>
+
+<% @people.each do |p|%>
+    <p><%=p.name%></p>
+<%end%>
+
+
+<%= form_for @goat do | f | %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <br/>
+    <%= f.label :age %>
+    <%= f.number_field :age %>
+    <br/>
+    <%= f.submit %> 
+<% end %>
