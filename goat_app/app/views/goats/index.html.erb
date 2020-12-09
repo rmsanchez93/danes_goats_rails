@@ -1,0 +1,16 @@
+<h1>Danes Goats</h1>
+<ul>
+
+<ul>
+<%@goats.each do | g |%>
+<li>
+        <%= link_to g.name, goats_path(g)%>
+    </li>
+<%end%>
+</ul>
+ 
+
+
+
+
+
