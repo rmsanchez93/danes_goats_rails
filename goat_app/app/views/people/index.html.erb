@@ -1,0 +1,8 @@
+<h1>All of Dane's Goats</h1>
+
+<ul>
+    <%@goats.each do |g|%>
+    <li><%= link_to g.name, goat_path(g.id)%></li>
+
+    <%end%>
+</ul>

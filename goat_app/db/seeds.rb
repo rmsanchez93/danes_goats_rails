@@ -9,7 +9,10 @@
 Person.destroy_all
 Goat.destroy_all
 
-dane = Person.create(name:"Dane", age:"30")
+dane = Person.create(name:"Dane", age:"25")
 
-molly = Goat.create(name:"molly", age:2, person: dane)
-toph = Goat.create(name:"toph", age:1, person: dane)
+
+Goat.create(name:"molly", age:"2", person_id: dane.id)
+Goat.create(name:"doris", age:"3", person_id: dane.id)
+ Goat.create(name:"boris", age:"2", person_id: dane.id)
+ Goat.create(name:"toph", age:"3", person_id: dane.id)
