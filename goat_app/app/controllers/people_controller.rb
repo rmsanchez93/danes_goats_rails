@@ -8,5 +8,9 @@ class PeopleController < ApplicationController
           @person.find(params[:id])
      end 
 
+     def new 
+          @person = Person.new
+     end
+     
 
 end
