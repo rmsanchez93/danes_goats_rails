@@ -1,0 +1,6 @@
+<h1><%= @person.name %></h1>
+
+<% @person.goats.each do |goat|%>
+  <%= goat.name %>
+  <br>
+  <% end %>
