@@ -1,0 +1,7 @@
+<h1>Here are the Goat Owners</h1>
+
+<div>
+  <% @persons.each do |person| %>
+    <div><%= link_to person.name, person_path(person) %></div>
+  <% end %>
+</div>

@@ -1,0 +1,9 @@
+<%= form_tag persons_path do %>
+  <label>Person name:</label><br>
+  <%= text_field_tag :'person[name]' %><br>
+
+  <label>Person Age:</label><br>
+  <%= text_field_tag :'person[age]' %><br>
+
+  <%= submit_tag "Submit Person" %>
+<% end %>

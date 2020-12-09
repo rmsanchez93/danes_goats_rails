@@ -1,0 +1,6 @@
+<h1> <%= @goat.name %> </h1>
+<ul>
+  <li>Goat's Name: <%= @goat.name %></li>
+  <li>Age: <%= @goat.age %></li>
+  <li>Belongs to: <%= Person.find(@goat.person_id).name %></li>
+</ul>

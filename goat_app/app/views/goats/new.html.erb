@@ -1,0 +1,12 @@
+<%= form_tag goats_path do %>
+  <label>Goat name:</label><br>
+  <%= text_field_tag :'goat[name]' %><br>
+
+  <label>Goat Age:</label><br>
+  <%= text_field_tag :'goat[age]' %><br>
+
+  <label>Person ID:</label><br>
+  <%= text_field_tag :'goat[person_id]' %><br>
+
+  <%= submit_tag "Submit Goat" %>
+<% end %>

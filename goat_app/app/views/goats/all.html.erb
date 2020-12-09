@@ -1,0 +1,7 @@
+<h1>Here are ALL Goats</h1>
+
+<div>
+  <% @goats.each do |goat| %>
+    <div><%= link_to goat.name, goat_path(goat) %></div>
+  <% end %>
+</div>
