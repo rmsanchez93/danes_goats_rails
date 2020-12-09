@@ -1,0 +1,14 @@
+<h1>Adopt your new Goat!</h1>
+
+<%= form_for @goat do |g| %>
+    <h4> Name: <% g.label :name %> </h4>
+    <%= g.text_field :name %>
+    <br>
+
+    <h4> Age: <% g.label :age %> </h4>
+    <%= g.text_field :age %>
+    <br><br><br>
+
+    <%= g.submit %>
+<% end %>
+
