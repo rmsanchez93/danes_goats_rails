@@ -1,0 +1,16 @@
+<%= form_for @goat do |f| %>
+
+  First name: <%= f.text_field :name %>
+    <br />
+  Last name : <%= f.text_field :age %>
+    <br />
+  Avatar URL : <%= f.text_field :img %>
+    <br />
+  Select owner from this list. 
+    <br>
+  <%= f.select :person_id, @people.collect { |p| [ p.name, p.id ] }, include_blank: true %>
+    <br>
+  If you can't see the owner you'd like, create one <%=link_to "here", new_person_path%> 
+    <br>
+  <%= f.submit %>
+<% end %>

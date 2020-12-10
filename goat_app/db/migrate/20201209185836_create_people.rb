@@ -3,6 +3,7 @@ class CreatePeople < ActiveRecord::Migration[6.0]
     create_table :people do |t|
       t.string :name
       t.string :age
+      t.string :img
 
       t.timestamps
     end

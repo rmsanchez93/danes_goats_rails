@@ -1,0 +1,20 @@
+<h1>Check out <%= @person.name%>'s amazing profile!</h1>
+<img src=<%=@person.img%> >
+<br>
+<%= @person.name%> is <%= @person.age%> years old, and currently owns <%= @person.goats.length%> goats! Look how pretty they are!
+<br>
+<br>
+
+<%# here I just got fancy with a table, but am just iterating through the goats to give info on each one. %>
+<table>
+<%@person.goats.each do |g|%>
+<tr>
+    <td><img src=<%=g.img%> style="width: 100px">
+    </td>
+    <td><p><%=g.name%> is a <%=g.age%> year old! Want to <%= link_to "visit", goat_path(g) %> her?</p>
+    </td>
+</tr>
+<% end %>
+</table>
+<br>
+Want to <%= link_to "go back", people_path%> and see the rest of the gang?

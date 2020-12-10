@@ -1,0 +1,13 @@
+<h1>Looking to join the Goat Gang?</h1>
+<p>Submit your application below!</p>
+<br>
+<%= form_for @person do |f| %>
+
+  Name: <%= f.text_field :name %>
+    <br />
+  Age : <%= f.text_field :age %>
+    <br />
+  Avatar URL : <%= f.text_field :img %>
+  <br>
+  <%= f.submit %>
+<% end %>

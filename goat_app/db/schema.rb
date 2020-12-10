@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 2020_12_09_185902) do
   create_table "goats", force: :cascade do |t|
     t.string "name"
     t.string "age"
+    t.string "img"
     t.integer "person_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -23,6 +24,7 @@ ActiveRecord::Schema.define(version: 2020_12_09_185902) do
   create_table "people", force: :cascade do |t|
     t.string "name"
     t.string "age"
+    t.string "img"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

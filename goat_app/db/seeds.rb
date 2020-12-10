@@ -9,7 +9,7 @@
 Person.destroy_all
 Goat.destroy_all
 
-dane = Person.create(name:"Dane", age:"30")
+dane = Person.create(name:"Dane", age:"30", img: "https://media.tenor.com/images/6d6334caf2d6d2910064d0c290ec442a/tenor.gif")
 
-molly = Goat.create(name:"molly", age:2, person: dane)
-toph = Goat.create(name:"toph", age:1, person: dane)
+molly = Goat.create(name:"molly", age:2, img: "https://media.tenor.com/images/c35ff228dd375c1d92b2799a4d150f25/tenor.gif", person: dane)
+toph = Goat.create(name:"toph", age:1, img: "https://i.makeagif.com/media/8-14-2014/LhoOJq.gif", person: dane)

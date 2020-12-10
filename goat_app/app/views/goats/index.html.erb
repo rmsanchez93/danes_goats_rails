@@ -1,0 +1,14 @@
+<div>
+
+<h1 style="color:red">Look at all these goats!!</h1>
+
+<ul>
+<%@goats.each do |goat|%>
+<li><%= link_to goat.name, goat_path(goat)%></li>
+<% end %>
+</ul>
+
+<p>Can't find the goat you're looking for? <%=link_to "Click here", new_goat_path%> to make a new goat! <br>
+Want to meet all the individuals who can claim these fine creatures? <%=link_to "Click here", people_path%></p>
+
+</div>

@@ -3,6 +3,7 @@ class CreateGoats < ActiveRecord::Migration[6.0]
     create_table :goats do |t|
       t.string :name
       t.string :age
+      t.string :img
       t.integer :person_id
 
       t.timestamps
