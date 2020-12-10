@@ -1,9 +1,12 @@
 <h1>Create a Goat</h1>
 
 <%= form_for @goat do |f| %>
+    <%= f.label :name%>
+   <%= f.text_field :name %>
+   <br/>
+   <%= f.label :age%>
+   <%= f.text_field :age %>
+   <br/>
 
-  First name: <%= f.text_field :name %><br />
-  Age : <%= f.text_field :age %><br />
-    
   <%= f.submit %>
 <% end %>

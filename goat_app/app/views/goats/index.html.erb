@@ -1,8 +1,9 @@
 <h1>All of Dane's Goats</h1>
 
 <ul>
-    <%@goats.each do |g|%>
-    <li><%= link_to g.name, goat_path(g.id)%></li>
+    <% @goats.map do |g| %>
+    <li><%= link_to g.name, goat_path(g) %></li>
 
-    <%end%>
+    <% end %>
+    <%= link_to "create a goat", new_goat_path%>
 </ul>

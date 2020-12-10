@@ -12,10 +12,16 @@ class GoatsController < ApplicationController
     end 
 
     def create
-        @goat = Goat.new(params[:name][:age])
-        @goat.person_id = Person.first.id 
+        @goat = Goat.new
+        @goat.name = params[:name]
+        @goat.age = params[:age]
+        @goat.person_id = Person.first.id
         @goat.save 
 
-        redirect_to goat_path
+        redirect_to goats_path
+    end 
+
+    def goat_params
+        
     end 
 end
