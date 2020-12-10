@@ -1,10 +1,13 @@
-<div>
-
+<%# I am using in-line style tags. These are gross and clunky, but they work. %>
+<div style="text-align:center">
 <h1 style="color:red">Look at all these goats!!</h1>
 
 <ul>
+<%# I avoided using <li> tags here because I didn't wants the dots, but I did want them broken into a basic list format %>
+<%# from the index action on the goat controller I am sending in a collection of every goat object. %>
 <%@goats.each do |goat|%>
-<li><%= link_to goat.name, goat_path(goat)%></li>
+<%# for each goat we create a link_to, giving the goat_path (which calls the show action in the goat controller) the 'goat' %>
+<%= link_to goat.name, goat_path(goat)%><br>
 <% end %>
 </ul>
 

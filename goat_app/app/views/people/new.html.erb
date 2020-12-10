@@ -1,13 +1,18 @@
+<%# I am using in-line style tags. These are gross and clunky, but they work. %>
+<div style="text-align:center">
 <h1>Looking to join the Goat Gang?</h1>
 <p>Submit your application below!</p>
 <br>
+<%# form_for creating a new person. Learn to love this format (at least for now) %>
 <%= form_for @person do |f| %>
 
   Name: <%= f.text_field :name %>
     <br />
   Age : <%= f.text_field :age %>
     <br />
+    <%# I added an img attribute to the migration table and database, just for fun. %>
   Avatar URL : <%= f.text_field :img %>
   <br>
   <%= f.submit %>
 <% end %>
+</div>

@@ -1,16 +1,22 @@
+<%# I am using in-line style tags. These are gross and clunky, but they work. %>
+<div style="text-align:center">
 <%= form_for @goat do |f| %>
 
+<%# this shows you don't need the label tag, but it can have benefits. %>
   First name: <%= f.text_field :name %>
     <br />
   Last name : <%= f.text_field :age %>
     <br />
+    <%# I added an img attribute to the migration table and database, just for fun. %>
   Avatar URL : <%= f.text_field :img %>
     <br />
   Select owner from this list. 
     <br>
+    <%# Thisis a fancy select prompt. We will go over it a bit more, but maybe you can pick apart what it does by playing with the code! %>
   <%= f.select :person_id, @people.collect { |p| [ p.name, p.id ] }, include_blank: true %>
     <br>
   If you can't see the owner you'd like, create one <%=link_to "here", new_person_path%> 
     <br>
   <%= f.submit %>
 <% end %>
+</div>

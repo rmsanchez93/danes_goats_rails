@@ -1,5 +1,8 @@
+<%# I am using in-line style tags. These are gross and clunky, but they work. %>
+<div style="text-align:center">
 <h1>VvVvV~~<%=@goat.name.capitalize%>'s Profile~~VvVvV</h1>
 <p>Hi! My name is <%= @goat.name.capitalize%> and I am <%= @goat.age%> years old!</p>
 <br>
 <img src=<%=@goat.img%>>
 <p>Take me back to see <%=link_to "all them goats!", goats_path%></p>
+</div>

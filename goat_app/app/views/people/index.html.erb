@@ -1,12 +1,15 @@
-<div>
-
+<%# I am using in-line style tags. These are gross and clunky, but they work. %>
+<div style="text-align:center">
 <h2 style="color:red">Who would own a goat you ask?</h2>
-<h3>Turns out...</h3>
-<h1>These people!</h1>
+<h3 style="color:red">Turns out...</h3>
+<h1 style="color:red">These people!</h1>
 
 <ul>
+<%# I avoided using <li> tags here because I didn't wants the dots, but I did want them broken into a basic list format %>
+<%# from the index action on the people controller I am sending in a collection of every person object. %>
 <%@people.each do |person|%>
-<li><%= link_to person.name, person_path(person)%></li>
+<%# for each person we create a link_to, giving the person_path (which calls the show action in the person controller) the 'person' %>
+<%= link_to person.name, person_path(person)%>
 <% end %>
 </ul>
 
