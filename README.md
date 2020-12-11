@@ -32,13 +32,13 @@ Build the following
 
 i want to see:
 
-an index page with all goats belonging to Dane 
+<!-- an index page with all goats belonging to Dane  -->
 
-a page where I can see information about a particular goat 
+<!-- a page where I can see information about a particular goat  -->
 
-a form to make another goat that redirects to a page of ALL goats 
+<!-- a form to make another goat that redirects to a page of ALL goats  -->
 
 
-a form to make another person that redirects to the person index page
+<!-- a form to make another person that redirects to the person index page -->
 
 

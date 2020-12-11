@@ -1,0 +1,18 @@
+Error 3: GoatsController#index is missing a template for request formats: text/html
+<br>
+Step 3: Create an index.html.erb page
+
+<h1>Meet Our Goats</h1>
+
+<ul>
+
+<%@goats.each do | g |%>
+    <li>
+    <%= link_to g.name, goat_path(g)%>
+    </li>
+
+<%end%>
+
+</ul>
+
+<%= link_to "New Goat Form", goats_new_path%>

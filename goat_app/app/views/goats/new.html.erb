@@ -1,0 +1,12 @@
+<h1>Adding New Goats</h1>
+
+<%= form_for @goat do | g | %>
+    <%= g.label :name %>
+    <%= g.text_field :name %>
+    <br/>
+    <%= g.label :age %>
+    <%= g.text_field :age %>
+    <br/>
+    <%= g.submit %>
+
+    <% end %>

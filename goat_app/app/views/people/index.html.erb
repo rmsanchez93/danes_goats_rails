@@ -1,0 +1,14 @@
+<h1>Meet Our People</h1>
+
+<ul>
+
+<%@people.each do | p |%>
+    <li>
+    <%= link_to p.name, person_path(p)%>
+    </li>
+
+<%end%>
+
+</ul>
+
+<%= link_to "New Person Form", people_new_path%>
